@@ -293,7 +293,7 @@ async def start(client, message):
                 ]
             else:
                 btn = [
-                    [InlineKeyboardButton('🖥 𝙾ᴛᴛ 𝚄ᴩᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ 🖥', url=UPDATE_CHANNEL_LNK)]
+                    [InlineKeyboardButton('🖥 𝙾ᴛᴛ 𝚄ᴩᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ 🖥', url=CHENL_LNK)]
                 ]
             msg = await client.send_cached_media(
                 chat_id=message.from_user.id,
