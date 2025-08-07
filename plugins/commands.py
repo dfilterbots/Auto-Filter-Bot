@@ -289,11 +289,11 @@ async def start(client, message):
             if STREAM_MODE:
                 btn = [
                     [InlineKeyboardButton('𝖦𝖾𝗇𝖾𝗋𝖺𝗍𝖾 𝖲𝗍𝗋𝖾𝗆𝗂𝗇𝗀 𝖫𝗂𝗇𝗄', callback_data=f'streamfile:{file_id}')],
-                    [InlineKeyboardButton('🖥 𝙾ᴛᴛ 𝚄ᴩᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ 🖥', url=UPDATE_CHANNEL_LNK)]  
+                    [InlineKeyboardButton('🖥 𝙾ᴛᴛ 𝚄ᴩᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ 🖥', url=CHNL_LNK)]  
                 ]
             else:
                 btn = [
-                    [InlineKeyboardButton('🖥 𝙾ᴛᴛ 𝚄ᴩᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ 🖥', url=CHENL_LNK)]
+                    [InlineKeyboardButton('🖥 𝙾ᴛᴛ 𝚄ᴩᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ 🖥', url=CHNL_LNK)]
                 ]
             msg = await client.send_cached_media(
                 chat_id=message.from_user.id,
