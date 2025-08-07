@@ -94,16 +94,15 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-                    InlineKeyboardButton('+ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ +', url=f'http://telegram.me/{temp.U_NAME}?startgroup=true')
+                    InlineKeyboardButton('⚒ 𝙱ᴏᴛ 𝚄ᴩᴅᴀᴛᴇ 𝙲ʜᴀɴɴᴇʟ ⚒', url=f'https://t.me/TBM_Bot_Updates')
                 ],[
-                    InlineKeyboardButton('🧧 ᴛʀᴇɴᴅɪɴɢ', callback_data="topsearch"),
-                    InlineKeyboardButton('🎟️ ᴜᴘɢʀᴀᴅᴇ', callback_data="premium"),
+                    InlineKeyboardButton('⚓ 𝐌𝚘𝚟𝚒𝚎 𝐒𝚎𝚊𝚛𝚌𝚑 𝐆𝚛𝚘𝚞𝚙 ⚓', url=f'https://t.me/+88N9oM5WQfI2NmJl')
+                    
                 ],[
-                    InlineKeyboardButton('♻️ ᴅᴍᴄᴀ', callback_data='disclaimer'),
-                    InlineKeyboardButton('👤 ᴀʙᴏᴜᴛ', callback_data='me')
-                ],[
-                    InlineKeyboardButton('🚫 ᴇᴀʀɴ ᴍᴏɴᴇʏ ᴡɪᴛʜ ʙᴏᴛ 🚫', callback_data="earn")
+                    InlineKeyboardButton('🖥 𝙾ᴛᴛ 𝚄ᴩᴅᴀᴛᴇ 𝙲ʜᴀɴɴᴇʟ 🖥', url=f'https://t.me/+FHe4nVjjxrI1MDc9')
+                    
                 ]]
+
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
             photo=random.choice(PICS),
@@ -192,7 +191,7 @@ async def start(client, message):
                         LOGGER.error("Bot Ko AUTH_CHANNEL Per Admin Bana Bhai Pahile 🤧")
                         return
                     btn.append([
-                        InlineKeyboardButton(f"⛔️ {i}. {channel_name} ⛔️", url=invite_link.invite_link)
+                        InlineKeyboardButton(f"𝐁𝐀𝐂𝐊𝐔𝐏 𝐂𝐇𝐀𝐍𝐍𝐄𝐋", url=invite_link.invite_link)
                     ])
                 elif chnl not in AUTH_REQ_CHANNEL and not await is_subscribed(client, message.from_user.id, chnl):
                     try:
@@ -201,7 +200,7 @@ async def start(client, message):
                         LOGGER.error("Bot Ko AUTH_CHANNEL Per Admin Bana Bhai Pahile 🤧")
                         return
                     btn.append([
-                        InlineKeyboardButton(f"⛔️ {i}. {channel_name} ⛔️", url=invite_link.invite_link)
+                        InlineKeyboardButton(f"𝐁𝐀𝐂𝐊𝐔𝐏 𝐂𝐇𝐀𝐍𝐍𝐄𝐋", url=invite_link.invite_link)
                     ])
                 i += 1
 
