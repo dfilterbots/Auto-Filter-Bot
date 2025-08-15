@@ -29,11 +29,11 @@ SPELL_IMG = environ.get("SPELL_IMG", "https://telegra.ph/file/10ebf6372bdcb02aa7
 SUBSCRIPTION = (environ.get('SUBSCRIPTION', 'https://telegra.ph/file/f983d857f3ce40795e4b8.jpg'))
 FSUB_IMG = (environ.get('FSUB_IMG', 'https://telegra.ph/file/10ebf6372bdcb02aa7442-7c6d0d89e69b1a45e5.jpg')).split() 
 
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '7181944051').split()] 
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002834747622').split()]
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002592746061'))  
-BIN_CHANNEL = int(environ.get('BIN_CHANNEL', '-1002826402527'))  
-MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '-1002533597153'))  
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '7181944051 6216705387 6272165202').split()] 
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002834747622 -1002607491301').split()]
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002702178551'))  
+BIN_CHANNEL = int(environ.get('BIN_CHANNEL', '-1002539993396'))  
+MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '-1002539993396'))  
 PREMIUM_LOGS = int(environ.get('PREMIUM_LOGS', '-100')) 
 auth_grp = environ.get('AUTH_GROUP')
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
